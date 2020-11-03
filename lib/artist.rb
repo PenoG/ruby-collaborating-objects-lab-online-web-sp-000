@@ -1,9 +1,9 @@
 class Artist
-  attr_reader :name
+  attr_accessor :name
   
   @@all = []
   
-  def initializer(name)
+  def initializer
     @name = name
     @@all << self
   end
